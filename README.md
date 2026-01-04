@@ -1,11 +1,13 @@
-# Sum of Two Normal Distributions
+## How to run
 
-This project visualizes the **probability distribution** of the sum of two independent normal distributions using Python.
+### SEM demo (main)
+python src/sem_demo.py
 
-## 📈 Overview
+### Simple SEM demo (old)
+python scripts/sem_simple_demo.py
 
-The script:
-- Generates two sets of 1000 random numbers from normal distributions
-- Adds the values element-wise
-- Plots the histogram of the resulting sum
+### Normal distribution demo
+python scripts/normal_dist_demo.py
 
+## Outputs
+Generated figures are saved under `out/`.
