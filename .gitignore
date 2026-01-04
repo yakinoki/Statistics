@@ -1,12 +1,21 @@
-# まず全てを無視
-*
+# outputs
+out/
+sem_viz/
+*.png
+*.svg
+*.pdf
 
-# ただし Python ソースコードは残す
-!*.py
+# data (optional)
+data/
 
-# さらに .gitignore 自身も追跡対象にする
-!.gitignore
+# python
+__pycache__/
+*.pyc
+.venv/
+.env
+.ipynb_checkpoints/
 
-# （必要なら README.md や requirements.txt なども残す）
-!README.md
-!requirements.txt
+# OS
+.DS_Store
+Thumbs.db
+
