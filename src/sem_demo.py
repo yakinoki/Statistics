@@ -163,6 +163,13 @@ print(" - 05_scatter_mkt_sales.png")
 # ---- (C) Fit SEM with semopy ----
 from semopy import Model, calc_stats, semplot
 
+# SEM専用のモデル記述言語
+# =~（測定モデル）
+# 潜在変数 MKT が観測変数 ad_reach, ad_freq, share_of_voice を「生み出している」
+# ~（回帰・構造方程式）
+# ~~（共分散・相関）
+# 因果方向は決めないが、相関はある
+
 model_desc = """
 # Measurement model (latent -> observed indicators)
 MKT =~ ad_reach + ad_freq + share_of_voice
